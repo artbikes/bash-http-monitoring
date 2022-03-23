@@ -157,7 +157,7 @@ writeOkayChecks() {
       if [[ -r $filename ]]; then
         value="$(cat "$filename")"
         filenameWithoutExt=${filename%.*}
-        echo '<a href="#" class="btn btn-success disabled" tabindex="-1" role="button" aria-disabled="true" style="margin-top: 10px; padding: 10px;">'
+        echo "<a href='https://${filenameWithoutExt}' target='_blank' class='btn btn-success' tabindex='-1' role='buttonh aria-disabled='true' style='margin-top: 10px; padding: 10px;'>"
         echo "${filenameWithoutExt}"
         echo "<font color=LightGray> ("
         echo "${value}"
